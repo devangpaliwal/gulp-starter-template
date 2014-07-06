@@ -5,7 +5,7 @@ var fs = require('fs');
 
 
 module.exports = function() {
-    gulp.src(__dirname + '/../../jade/**/*.jade')
+    return gulp.src(__dirname + '/../../jade/**/*.jade')
         .pipe(jade({
             client: true
         }))

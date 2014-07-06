@@ -5,7 +5,7 @@ var gless = require('gulp-less'),
     gutil = require('gulp-util');
 
 module.exports = function() {
-    gulp.src(__dirname + '/../../less/**/*.less')
+    return gulp.src(__dirname + '/../../less/**/*.less')
         .pipe(gless({
             paths: [path.join(__dirname, 'less', 'includes')]
         }))

@@ -15,7 +15,6 @@ module.exports = function() {
 }
 
 function getFiles(dir, files_) {
-    console.log(dir);
     files_ = files_ || [];
     if (typeof files_ === 'undefined ') files_ = [];
     var files = fs.readdirSync(dir);
